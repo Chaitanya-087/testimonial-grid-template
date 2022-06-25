@@ -1,0 +1,105 @@
+:root {
+    --clr-moderate-violet: hsl(263, 55%, 52%);
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    width: 72vw;
+}
+.testimony{
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--clr-White);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.testimony:nth-child(1){
+    background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    grid-area: 1/1/2/3;
+    background-position: top right;
+}
+.testimony:nth-child(2){
+    background: var(--clr-very-dark-grayish-blue);
+}
+.testimony:nth-child(3){
+    color: var(--clr-very-dark-grayish-blue);
+    background: var(--clr-White);
+    grid-area: 1/4/3/4;
+}
+.testimony:nth-child(4){
+    color: var(--clr-very-dark-grayish-blue);
+    background-color: var(--clr-White);
+}
+.testimony:nth-child(5){
+    background: var(--clr-very-dark-blackish-blue);
+    grid-area: 2/2/2/4;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.user > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+}
+.details > .name{
+    font-weight: 700;
+}
+.details > .designation {
+    font-weight:700;
+    opacity: 50%;
+    font-size: 14px;
+}
+.testimony h2{
+    margin-bottom: 0.75rem;
+}
+.testimony > .review{
+    text-align:justify;
+    opacity: 75%;
+    font-size: 14px;
+}
+
+@media screen and (max-width:48em) {
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimony{
+        height: max-content;
+    }
+    
+}
