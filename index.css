@@ -82,7 +82,8 @@ main{
     opacity: 50%;
     font-size: 14px;
 }
-.testimony h2{
+.testimony >h1{
+    font-size: 24px;
     margin-bottom: 0.75rem;
 }
 .testimony > .review{
