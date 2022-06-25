@@ -17,6 +17,7 @@
 
 main{
     min-height: 100vh;
+    background-color: var(--clr-light-grayish-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +27,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
-    width: 72vw;
+    width: 75vw;
 }
 .testimony{
     padding: 20px;
