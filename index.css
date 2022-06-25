@@ -39,7 +39,7 @@ main{
     background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     grid-area: 1/1/2/3;
-    background-position: top right;
+    background-position: 75% 0;
 }
 .testimony:nth-child(2){
     background: var(--clr-very-dark-grayish-blue);
